@@ -965,7 +965,7 @@ SortingGroup:
   m_GameObject: {fileID: 6614505100653060432}
   m_Enabled: 1
   m_SortingLayerID: -1898139327
-  m_SortingLayer: 8
+  m_SortingLayer: 10
   m_SortingOrder: 202
   m_SortAtRoot: 0
 --- !u!95 &1957334871924335930
@@ -1077,8 +1077,11 @@ MonoBehaviour:
   attackAble:
     serializedVersion: 2
     m_Bits: 320
-  coinPrefab: {fileID: 1002524728706790156, guid: 0a03d7f628c87204eb19dc82e8d6420b, type: 3}
+  itemPrefab: {fileID: 1002524728706790156, guid: 0a03d7f628c87204eb19dc82e8d6420b, type: 3}
   dame: 10
+  leftPos: {x: 0, y: 0, z: 0}
+  rightPos: {x: 0, y: 0, z: 0}
+  distance: 0
   maxHP: 60
   hpBar: {fileID: 0}
 --- !u!1 &7470270470198378426

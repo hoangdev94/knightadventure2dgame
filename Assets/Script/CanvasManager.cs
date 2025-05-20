@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class CanvasManager : MonoBehaviour
 {
-   public void PlayAgain()
+
+ 
+
+    public void PlayAgain()
     {
         GameManager.Instance.RestartGame();
     }
@@ -10,5 +13,6 @@ public class CanvasManager : MonoBehaviour
     {
         GameManager.Instance.GoToMenu();
     }
+
 
 }

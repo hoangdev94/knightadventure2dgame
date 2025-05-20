@@ -244,7 +244,7 @@ MonoBehaviour:
   attackAble:
     serializedVersion: 2
     m_Bits: 192
-  coinPrefab: {fileID: 2036252321196232437, guid: 4dad0f20b702a7e43998b0e589487727, type: 3}
+  itemPrefab: {fileID: 1002524728706790156, guid: 0a03d7f628c87204eb19dc82e8d6420b, type: 3}
   dame: 0
   leftPos: {x: 0, y: 0, z: 0}
   rightPos: {x: 0, y: 0, z: 0}
@@ -252,6 +252,7 @@ MonoBehaviour:
   maxHP: 100
   hpBar: {fileID: 0}
   HpBarBoss: {fileID: 0}
+  coinPrefab: {fileID: 2036252321196232437, guid: 4dad0f20b702a7e43998b0e589487727, type: 3}
 --- !u!1 &4352995073885665153
 GameObject:
   m_ObjectHideFlags: 0

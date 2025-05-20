@@ -254,7 +254,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1898139327
-  m_SortingLayer: 8
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 413052800342825067, guid: b6dd444ad2f9eae4ca2d1febaac704ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -312,8 +312,11 @@ MonoBehaviour:
   attackAble:
     serializedVersion: 2
     m_Bits: 64
-  coinPrefab: {fileID: 1002524728706790156, guid: 0a03d7f628c87204eb19dc82e8d6420b, type: 3}
+  itemPrefab: {fileID: 1002524728706790156, guid: 0a03d7f628c87204eb19dc82e8d6420b, type: 3}
   dame: 12
+  leftPos: {x: 0, y: 0, z: 0}
+  rightPos: {x: 0, y: 0, z: 0}
+  distance: 0
   maxHP: 60
   hpBar: {fileID: 7911891906993367284}
 --- !u!50 &4825747827941456155

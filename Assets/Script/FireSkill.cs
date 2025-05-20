@@ -23,7 +23,7 @@ public class FireSkill : MonoBehaviour
     {
         hasCollided = true;
 
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss"))
         {
             Enemy enemy = collision.GetComponent<Enemy>();
             if (enemy != null)

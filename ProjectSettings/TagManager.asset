@@ -10,6 +10,7 @@ TagManager:
   - KeyDoor
   - Enemy
   - Skill
+  - Boss
   layers:
   - Default
   - TransparentFX

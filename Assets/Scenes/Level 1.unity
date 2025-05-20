@@ -22825,6 +22825,10 @@ PrefabInstance:
       propertyPath: coinPrefab
       value: 
       objectReference: {fileID: 3227135501101985604, guid: a77ed4c91a6aea84984c1f565958050a, type: 3}
+    - target: {fileID: 6844528220585199590, guid: e7682dcfbd78c7542a1b68ebe5b1db52, type: 3}
+      propertyPath: itemPrefab
+      value: 
+      objectReference: {fileID: 3227135501101985604, guid: a77ed4c91a6aea84984c1f565958050a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

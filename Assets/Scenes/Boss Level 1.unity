@@ -1268,6 +1268,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3980280377223715892, guid: 4116b12ffba502a43b3ad0ca9cd9efbc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980280377223715892, guid: 4116b12ffba502a43b3ad0ca9cd9efbc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980280378246713430, guid: 4116b12ffba502a43b3ad0ca9cd9efbc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4313810751023394264, guid: 4116b12ffba502a43b3ad0ca9cd9efbc, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -3041,6 +3053,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2740602246495796519, guid: ba19e4c78148f4849bb92abb50cca04a, type: 3}
       propertyPath: m_Name
+      value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740602246495796519, guid: ba19e4c78148f4849bb92abb50cca04a, type: 3}
+      propertyPath: m_TagString
       value: Boss
       objectReference: {fileID: 0}
     - target: {fileID: 3257492926164867629, guid: ba19e4c78148f4849bb92abb50cca04a, type: 3}

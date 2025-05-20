@@ -14,8 +14,11 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private GameObject gameOverUi;
+    [SerializeField] private GameObject hpbarBoss;
+    [SerializeField] private GameObject Boss;
     [SerializeField] private string Level;
     private bool isGameOver = false;
+    private bool isGameplayScene;
 
     void Awake()
     {
@@ -27,6 +30,7 @@ public class GameManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
     }
 
     void Start()
@@ -36,6 +40,11 @@ public class GameManager : MonoBehaviour
         FindUIReferences();
         UpdateScore();
         if (gameOverUi != null) gameOverUi.SetActive(false);
+        if (SceneManager.GetActiveScene().name.StartsWith("Level"))
+        {
+            isGameplayScene = true;
+        }
+
     }
 
     void OnEnable()
@@ -56,6 +65,10 @@ public class GameManager : MonoBehaviour
         UpdateScore();
         UpdateTrigger();
         if (gameOverUi != null) gameOverUi.SetActive(false);
+        if (isGameplayScene && Boss != null && hpbarBoss != null)
+        {
+            hpbarBoss.SetActive(true);
+        }
     }
 
     private void FindUIReferences()
@@ -72,6 +85,14 @@ public class GameManager : MonoBehaviour
         if (gameOverUi == null)
         {
             gameOverUi = GameObject.Find("GameOverUI");
+        }
+        if(hpbarBoss == null)
+        {
+            hpbarBoss = GameObject.Find("HpBarBoss");
+        }
+        if(Boss == null)
+        {
+                Boss = GameObject.FindWithTag("Boss");
         }
     }
 
