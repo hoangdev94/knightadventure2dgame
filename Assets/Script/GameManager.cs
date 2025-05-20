@@ -21,12 +21,12 @@ public class GameManager : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);
             return;
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject); 
+        DontDestroyOnLoad(gameObject);
     }
 
     void Start()
@@ -52,8 +52,8 @@ public class GameManager : MonoBehaviour
     {
         Level = scene.name;
         Time.timeScale = 1;
-        FindUIReferences(); // Tìm lại UI mỗi khi load scene
-        UpdateScore(); // Cập nhật điểm khi vào scene mới
+        FindUIReferences();
+        UpdateScore();
         UpdateTrigger();
         if (gameOverUi != null) gameOverUi.SetActive(false);
     }
@@ -78,10 +78,7 @@ public class GameManager : MonoBehaviour
     public void AddScore(int point)
     {
         score += point;
-        if (AudioManager.Instance != null)
-        {
-            AudioManager.Instance.CoinClip();
-        }
+        AudioManager.Instance?.CoinClip();
         UpdateScore();
     }
 
@@ -135,14 +132,14 @@ public class GameManager : MonoBehaviour
         score = 0;
         UpdateScore();
         Time.timeScale = 1;
-        SceneManager.LoadScene(Level);
+        SceneLoader.Instance.LoadScene(Level);
     }
 
     public void GoToMenu()
     {
         Time.timeScale = 1;
         isGameOver = false;
-        SceneManager.LoadScene("Menu");
+        SceneLoader.Instance.LoadScene("Menu");
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -160,6 +157,7 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0;
         }
     }
+
     void UpdateTrigger()
     {
         if (SceneManager.GetActiveScene().name == "Level 2")

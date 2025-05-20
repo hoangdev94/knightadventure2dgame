@@ -3,7 +3,7 @@ guid: 788b01b24b947f74b9c18245e3cf1ef3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,8 +64,10 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -74,9 +77,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -86,9 +90,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -98,9 +103,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,9 +116,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -122,6 +129,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -138,6 +146,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.49019608, y: 0.48}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -159,6 +168,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.4848485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -180,6 +190,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.4814815}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -201,6 +212,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -222,6 +234,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.49056605, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -243,6 +256,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -264,6 +278,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.4893617, y: 0.4827586}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -285,6 +300,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.48}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -306,6 +322,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.47826087}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -327,6 +344,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.4878049, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -348,6 +366,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.47619048, y: 0.46666667}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -369,6 +388,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.4814815, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -390,6 +410,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.47058824}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -411,6 +432,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -432,6 +454,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.47058824, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -443,6 +466,7 @@ TextureImporter:
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -452,26 +476,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
+      TX Dungeon Wall Dirt - 01: 1011848814
+      TX Dungeon Wall Dirt - 02: 1520466344
+      TX Dungeon Wall Dirt - 03: -1933495746
+      TX Dungeon Wall Dirt - 04: -83548089
       TX Dungeon Wall Dirt - 05: 1693221278
       TX Dungeon Wall Dirt - 06: -1031036300
-      TX Dungeon Wall Dirt - 09: 353587064
       TX Dungeon Wall Dirt - 07: 1491061045
-      TX Dungeon Wall Dirt - 10: 369098457
-      TX Dungeon Wall Dirt - Kitchen 01: 950417661
-      TX Dungeon Wall Dirt - 01: 1011848814
-      TX Dungeon Wall Dirt - 11: -231488988
-      TX Dungeon Wall Dirt - 04: -83548089
       TX Dungeon Wall Dirt - 08: -1469892866
-      TX Dungeon Wall Dirt - 03: -1933495746
-      TX Dungeon Wall Dirt_9: -618997130
-      TX Dungeon Wall Dirt - 13: 238850072
+      TX Dungeon Wall Dirt - 09: 353587064
+      TX Dungeon Wall Dirt - 10: 369098457
+      TX Dungeon Wall Dirt - 11: -231488988
       TX Dungeon Wall Dirt - 12: -1126232417
-      TX Dungeon Wall Dirt - 02: 1520466344
+      TX Dungeon Wall Dirt - 13: 238850072
       TX Dungeon Wall Dirt - 14: -831773984
-  spritePackingTag: 
+      TX Dungeon Wall Dirt - Kitchen 01: 950417661
+      TX Dungeon Wall Dirt_9: -618997130
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

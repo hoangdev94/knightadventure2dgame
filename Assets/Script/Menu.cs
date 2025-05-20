@@ -3,11 +3,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static UnityEngine.Rendering.HighDefinition.ScalableSettingLevelParameter;
 
 public class Menu : MonoBehaviour
 {
     [SerializeField] private GameObject OptionMenu;
     [SerializeField] private GameObject StartMenu;
+    [SerializeField] private GameObject MainMenu;
     [SerializeField] private GameObject Stage;
 
     private void OnEnable()
@@ -29,7 +31,8 @@ public class Menu : MonoBehaviour
 
     void OnLevelClick(string level)
     {
-        SceneManager.LoadScene("Level " + level);
+        MainMenu.SetActive(false);
+        SceneLoader.Instance.LoadScene("Level " + level);
     }
 
     public void PlayGame()

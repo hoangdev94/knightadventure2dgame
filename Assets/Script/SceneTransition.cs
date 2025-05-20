@@ -2,6 +2,7 @@ using Cainos.PixelArtPlatformer_Dungeon;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.Rendering.HighDefinition.ScalableSettingLevelParameter;
 
 public class SceneTransition : MonoBehaviour
 {
@@ -18,6 +19,6 @@ public class SceneTransition : MonoBehaviour
     IEnumerator LoadLevel( float delay)
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(transiotionTo);
+        SceneLoader.Instance.LoadScene(transiotionTo);
     }
 }
