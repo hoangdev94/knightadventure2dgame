@@ -12,7 +12,7 @@ public class SceneTransition : MonoBehaviour
     {
         if (collision.CompareTag("Player") && Door.Instance.IsOpened)
         {
-            StartCoroutine(LoadLevel(5f));
+            StartCoroutine(LoadLevel(3f));
         }
     }
 

@@ -7,26 +7,26 @@ public class Enemy : MonoBehaviour
 {
     [Header("Stats")]
     [Header("Movement")]
-    [SerializeField] float patrolSpeed = 1f;
-    [SerializeField] float followSpeed = 2f;
+    [SerializeField] public float patrolSpeed = 1f;
+    [SerializeField] public float followSpeed = 2f;
     [Header("References")]
     [SerializeField] protected Rigidbody2D rgb2d;
     [SerializeField] protected Animator anim;
-    [SerializeField] protected Transform leftPoint;
-    [SerializeField] protected Transform rightPoint;
+    [SerializeField] public Transform leftPoint;
+    [SerializeField] public Transform rightPoint;
     [SerializeField] Transform SideAttackTransform;
     [SerializeField] Vector2 SideAttackArea;
     [SerializeField] LayerMask attackAble;
-    [SerializeField] private GameObject coinPrefab; 
-    private float timeDelay = 0.5f;
+    [SerializeField] protected GameObject itemPrefab; 
+    protected float timeDelay = 0.5f;
     private float timeAttack;
     protected Transform target;
     protected bool isPlayerInRange = false;
     protected bool movingRight = true;
     [SerializeField] public float dame;
-    private Vector3 leftPos;
-    private Vector3 rightPos;
-    protected float distance;
+    public Vector3 leftPos;
+    public Vector3 rightPos;
+    public float distance;
     private bool isDead = false;
     [SerializeField] protected float maxHP = 50;
     protected float currentHp;
@@ -111,7 +111,6 @@ public class Enemy : MonoBehaviour
 
         // Lật hướng sprite
         transform.localScale = new Vector3(movingRight ? 1 : -1, 1, 1);
-
         hpBar.fillOrigin = movingRight ? (int)Image.OriginHorizontal.Left : (int)Image.OriginHorizontal.Right;
     }
 
@@ -213,16 +212,16 @@ public class Enemy : MonoBehaviour
         }
        
     }
-    IEnumerator DestroyAfterDelay(float delay)
+    public virtual IEnumerator DestroyAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        if (coinPrefab != null)
+        if (itemPrefab!= null)
         {
-            Instantiate(coinPrefab, transform.position, Quaternion.identity);
+            Instantiate(itemPrefab, transform.position, Quaternion.identity);
         }
         Destroy(gameObject);
     }
-    protected void UpdateHpBar()
+    public virtual void UpdateHpBar()
     {
         hpBar.fillAmount = currentHp / maxHP;
     }
