@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Coin
+  - Key
+  - KeyChest
+  - KeyDoor
+  - Enemy
+  - Skill
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - ground
+  - Water
+  - UI
+  - Player
+  - Enemy
+  - Attackable
+  - EnemyTrigger
+  - Coin
+  - Chest
+  - Door
+  - Key
+  - Skill
+  - Gamemanager
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackGround
+    uniqueID: 937547911
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Sky
+    uniqueID: 3726864085
+    locked: 0
+  - name: Cloud
+    uniqueID: 3829224941
+    locked: 0
+  - name: ForeGroud1
+    uniqueID: 1645268807
+    locked: 0
+  - name: ForeGround
+    uniqueID: 150653129
+    locked: 0
+  - name: Ground
+    uniqueID: 4009736827
+    locked: 0
+  - name: Coin
+    uniqueID: 1662451089
+    locked: 0
+  - name: Chest
+    uniqueID: 2145303403
+    locked: 0
+  - name: Door
+    uniqueID: 2689611765
+    locked: 0
+  - name: Key
+    uniqueID: 1590532963
+    locked: 0
+  - name: Enemy
+    uniqueID: 2396827969
+    locked: 0
+  - name: Skill
+    uniqueID: 345690083
+    locked: 0
+  - name: Player
+    uniqueID: 3900192403
+    locked: 0
+  - name: HpBar
+    uniqueID: 1718772723
+    locked: 0
+  - name: UI
+    uniqueID: 2830526949
+    locked: 0
+  - name: 'UI '
+    uniqueID: 1492949361
+    locked: 0
+  m_RenderingLayers:
+  - Default
