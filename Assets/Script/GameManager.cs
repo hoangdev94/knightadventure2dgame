@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private GameObject gameOverUi;
+    [SerializeField] private GameObject pauseUi;
     [SerializeField] private GameObject hpbarBoss;
     [SerializeField] private GameObject Boss;
     [SerializeField] private string Level;
@@ -40,6 +41,7 @@ public class GameManager : MonoBehaviour
         FindUIReferences();
         UpdateScore();
         if (gameOverUi != null) gameOverUi.SetActive(false);
+        if (pauseUi != null) pauseUi.SetActive(false);
         if (SceneManager.GetActiveScene().name.StartsWith("Level"))
         {
             isGameplayScene = true;
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour
         UpdateScore();
         UpdateTrigger();
         if (gameOverUi != null) gameOverUi.SetActive(false);
+        if (pauseUi != null) pauseUi.SetActive(false);
         if (isGameplayScene && Boss != null && hpbarBoss != null)
         {
             hpbarBoss.SetActive(true);
@@ -81,12 +84,15 @@ public class GameManager : MonoBehaviour
                 scoreText = scoreObj.GetComponent<TextMeshProUGUI>();
             }
         }
-
         if (gameOverUi == null)
         {
             gameOverUi = GameObject.Find("GameOverUI");
         }
-        if(hpbarBoss == null)
+        if (pauseUi == null)
+        {
+            pauseUi = GameObject.Find("PauseUI");
+        }
+        if (hpbarBoss == null)
         {
             hpbarBoss = GameObject.Find("HpBarBoss");
         }
@@ -155,7 +161,16 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         SceneLoader.Instance.LoadScene(Level);
     }
-
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+        pauseUi.SetActive(true);
+    }
+    public void ContinueGame()
+    {
+        Time.timeScale = 1;
+        pauseUi.SetActive(false);
+    }
     public void GoToMenu()
     {
         Time.timeScale = 1;

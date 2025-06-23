@@ -13,6 +13,12 @@ public class CanvasManager : MonoBehaviour
     {
         GameManager.Instance.GoToMenu();
     }
-
-
+    public void PauseGame()
+    {
+        GameManager.Instance.PauseGame();
+    }
+    public void ContinueGame()
+    {
+        GameManager.Instance.ContinueGame();
+    }
 }
